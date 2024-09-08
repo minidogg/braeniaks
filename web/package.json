@@ -1,0 +1,30 @@
+{
+  "name": "braeniaks-web",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack",
+    "dev-webpack": "npx webpack --watch",
+    "dev": "npm run dev-webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minidogg/braeniaks.git"
+  },
+  "author": "minidogg",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/minidogg/braeniaks/issues"
+  },
+  "homepage": "https://github.com/minidogg/braeniaks#readme",
+  "devDependencies": {
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "concurrently": "^9.0.0",
+    "sanitize-html": "^2.13.0"
+  }
+}

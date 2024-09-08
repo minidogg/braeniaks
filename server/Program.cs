@@ -63,6 +63,9 @@ app.Map("/ws", async context => {
     }
 
 });
+app.Map("/", async context => {
+    context.Response.Redirect("/quiz.html");
+});
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
