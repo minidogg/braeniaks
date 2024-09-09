@@ -15,3 +15,4 @@ export function ne(elementText, sanitize = true){
     e.innerHTML = sanitizeHtml(elementText)
     return e
 }
+

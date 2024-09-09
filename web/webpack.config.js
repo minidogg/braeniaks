@@ -10,6 +10,7 @@ module.exports = {
   },
 
   module: {
-    rules: [{ test: /\.js$/, use: path.resolve('./badelloader.js') }],
+    rules: [{ test: /\.js$/, use: path.resolve('./badelloader.js') }]
+
   }
 };
