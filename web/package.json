@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx webpack",
     "dev-webpack": "npx webpack --watch",
-    "dev": "npm run dev-webpack"
+    "dev-http": "cd web-src && http-server -p 3000 -c-1 -S -C ../cert.pem -K ../key.pem",
+    "dev": "concurrently \"npm run dev-webpack\" \"npm run dev-http\"",
+    "selfsign": "node selfsigned.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,7 @@
   },
   "dependencies": {
     "concurrently": "^9.0.0",
-    "sanitize-html": "^2.13.0"
+    "sanitize-html": "^2.13.0",
+    "selfsigned": "^2.4.1"
   }
 }

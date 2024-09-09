@@ -14,8 +14,7 @@ function CSSLoader(source){
 }
 
 function BadelLoader (source) {
-    console.log("E: "+this.rootContext)
-    let modifiedSource = CSSLoader( ElementLoader(source) )
+    let modifiedSource = ElementLoader(source)
 
     
 

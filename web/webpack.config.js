@@ -3,10 +3,10 @@ const path = require('path');
 module.exports = {
   mode:'development',
   devtool: 'inline-source-map',
-  entry: './websrc/entry.js',
+  entry: './js-src/entry.js',
   output: {
     filename: 'app.js',
-    path: path.resolve(__dirname, '../server/wwwroot/js'),
+    path: path.resolve(__dirname, './web-src/js/app.js'),
   },
 
   module: {
