@@ -1,0 +1,15 @@
+:root{
+    --hollywood-cerise: #db4faaff;
+    --foreground: #337357ff;
+    --asparagus: #6d9f71ff;
+    --madder: #a31621ff;
+    --background: #3d2b56ff;
+}
+
+body{
+    background-color: var(--background);
+}
+
+.foreground{
+    background-color: var(--foreground);
+}

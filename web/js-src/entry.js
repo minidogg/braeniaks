@@ -1,6 +1,7 @@
 import * as badel from './badel.js'
-
 import * as Quiz from './quiz.js'
+
+badel.LoadCSS("/css/global.css")
 
 const pages = {
     "/quiz.html": Quiz.Page
