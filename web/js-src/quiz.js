@@ -1,4 +1,5 @@
-import {ne, ChangePageContent, LoadCSS} from './badel.js'
+import {ne, ChangePageContent, LoadCSS} from './badel.js';
+import { settings } from './settings.js';
 
 export function coolShapeBackground(){
     LoadCSS("/css/background.css")
@@ -11,8 +12,7 @@ export function coolShapeBackground(){
 }
 
 export function Page(){
-    LoadCSS("/css/quiz.css")
-
+    LoadCSS("/css/quiz.css");
 
     let content = ne(<>
         ${coolShapeBackground()}
@@ -23,5 +23,12 @@ export function Page(){
             <input type="submit" value="Enter" class="attentionButton"></input>
         </form>
     </>)
-    ChangePageContent(content)
+    ChangePageContent(content);
+
+    let pinForm = content.getElementById("pinForm");
+    let pinCode = content.getElementById("pinCode");
+    pinForm.addEventListener("submit", (e)=>{
+        e.preventDefault();
+
+    })
 }

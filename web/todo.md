@@ -1,0 +1,1 @@
+- Add settings menu for changing things like the server.
