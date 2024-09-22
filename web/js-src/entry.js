@@ -10,7 +10,7 @@ const pages = {
 if(pages[window.location.pathname]){
     let pageHTML = pages[window.location.pathname]();
 
-    document.getElementById("page").replaceChildren(pageHTML)
+    // document.getElementById("page").replaceChildren(pageHTML)
 }else{
     console.log("No page found!");
 }

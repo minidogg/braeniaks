@@ -4,7 +4,7 @@ const path = require("path")
 let loadedCss = path.resolve("./");
 
 function ElementLoader(source){
-  return source.replace(/=\(<>/g, '(`')
+  return source.replace(/\(<>/g, '(`')
   .replace(/<\/>\)/g, "`)");
 }
 function CSSLoader(source){

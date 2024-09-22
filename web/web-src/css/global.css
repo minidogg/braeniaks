@@ -1,15 +1,52 @@
 :root{
-    --hollywood-cerise: #db4faaff;
-    --foreground: #337357ff;
-    --asparagus: #6d9f71ff;
-    --madder: #a31621ff;
-    --background: #3d2b56ff;
+    --accent-color: #ff3ecbff; /* Best used for accent elements like buttons or hover effects due to its vibrant and eye-catching nature. */
+    --accent-color-hover: rgb(214, 47, 170);
+
+    --primary-text-color: #4bb97eff; /* Ideal for primary text or icons, offering good readability while staying lively. */
+    --secondary-background: #f2f0f5ff; /* A light, neutral off-white that complements the other colors without being tied to any specific hue. */
+    --alert-color: #f3b700ff; /* A bright yellow suitable for warnings, alerts, or attention-grabbing elements, complementing the rest of the color palette. */
+    --main-background: #56388dff; /* Perfect as a deep background color, giving the interface a rich, modern look without overwhelming other elements. */
+
+    --default-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+}
+
+*{
+    font-family: var(--default-font);
 }
 
 body{
-    background-color: var(--background);
+    background-color: var(--main-background);
 }
 
 .foreground{
-    background-color: var(--foreground);
+    background-color: var(--secondary-background);
+}
+
+.attentionButton {
+    all: unset;
+    background-color: var(--accent-color);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+
+    display:block;
+    width:90%;
+}
+.attentionButton:hover{
+    cursor: pointer;
+    background-color: var(--accent-color-hover);
+}
+
+.attentionInput{
+    all: unset; 
+    background-color: var(--secondary-background);
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    width:90%;
+    border: solid 2px rgba(0, 0, 0, 0.2);
 }

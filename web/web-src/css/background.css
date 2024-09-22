@@ -1,0 +1,51 @@
+:root{
+    --falling-animate:falling ease-in-out alternate infinite;
+}
+
+.backgroundShape {
+    z-index: -10;
+    position:absolute;
+    filter: brightness(200%);
+}
+
+body{
+    overflow: hidden;
+}
+
+@keyframes falling {
+    0% {
+      translate: 0 0;
+      rotate: 0deg;
+    }
+
+    100% {
+      translate: 10vw 50vh;
+      rotate: 360deg;
+    }
+}
+
+.backgroundShape:nth-of-type(1){
+    filter: brightness(180%);
+    animation: var(--falling-animate) 40s;
+    /* scale: 750%; */
+    top: -20vh;
+}
+.backgroundShape:nth-of-type(2){
+    filter: brightness(200%);
+    animation: var(--falling-animate) 25s;
+    /* scale: 875%; */
+    top: 30vh;
+}
+.backgroundShape:nth-of-type(3){
+    filter: brightness(250%);
+    animation: var(--falling-animate) 35s;
+    /* scale: 1000%; */
+    top: -60vh;
+}
+.backgroundShape:nth-of-type(4){
+    filter: brightness(230%);
+    animation: var(--falling-animate) 45s;
+    /* scale: 625%; */
+    top: 50vh;
+}
+
