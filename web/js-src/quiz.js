@@ -1,5 +1,6 @@
 import {ne, ChangePageContent, LoadCSS} from './badel.js';
 import { settings } from './settings.js';
+import * as ws from './we'
 
 export function coolShapeBackground(){
     LoadCSS("/css/background.css")
@@ -25,10 +26,11 @@ export function Page(){
     </>)
     ChangePageContent(content);
 
-    let pinForm = content.getElementById("pinForm");
-    let pinCode = content.getElementById("pinCode");
+    let pinForm = document.getElementById("pinForm");
+    let pinCode = document.getElementById("pinCode");
     pinForm.addEventListener("submit", (e)=>{
         e.preventDefault();
-
+        let pinValue = pinCode.value.replace(/[^\da-f]/gi, "")
+        console.log(pinValue)
     })
 }
